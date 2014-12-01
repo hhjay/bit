@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>注册咧</title>
+</head>
+<script type="text/javascript">
+    function pwd(){
+    	var pwd1 = document.login.pwd1.value;
+    	var pwd2 = document.login.pwd2.value;
+        if(pwd1 != pwd2){
+            alert("两次密码不一致！");
+            document.login.pwd1.focus(); 
+        }else
+            alert("两次密码一致！");
+            document.login.submit();
+        }
+        function judge() {
+        	var pwd1 = document.login.pwd1.value;
+        	if (pwd1 == "") {
+        		document.write("你的第一个密码还空呢。");
+        	};
+        }
+</script>
+<body>
+<div class="login">
+	<form name="login" method="post" action="reg.php">
+		<label for="username">用户:</label>
+			<input type="text" id="username" name="username" /><br/>
+		<label for="pwd1">密码:</label>
+			<input type="password" id="pwd1" name="pwd1" onblur="judge();" /><br/>
+		<label for="pwd2">再次输入密码:</label>
+			<input type="password" id="pwd2" name="pwd2" onblur="pwd();" /><br/>
+		<label for="ly">你想说的话:</label>
+			<textarea cols="30" rows="6" id="ly" name="ly"></textarea>
+		<input type="submit" id="sub" name="sub" value="注册咯" />
+	</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+body{background: #eaecee;}
+#header{width: 100%;height: 120px;float: left;background: url(..//img/_bg.png)repeat;}
+.head_img{
+	max-width: 100%;
+	height: 35px;
+	float: left; 
+	margin-top: 40px; 
+}
+/* #################End头部################# */
+
+#nav{width: 100%;height: 50px;float: left;}
+/* #################End导航################# */
+
+#lunbo{width: 100%;height: 300px;float: left;background: #abc;}
+.carousel-indicators{
+    display: none;
+    list-style: none;
+}
+.carousel-inner img{
+    max-width: 100%;
+    max-height: 300px;
+    height: 300px;
+}
+.ppp{
+    width: 100%;
+    height: 300px;
+    margin: 0px auto;
+}
+.carousel-control{
+    height: 80px;
+    margin-top: 100px;
+}
+.carousel-control.right{
+    right: 0;
+  	left: auto;
+}
+/* #################End轮播################# */
+
+#top,#position,#human,#introduce{width: 95%;height: 90px;float: left;margin-top: 10px;margin-left: 2.5%;}
+#top{	
+	background: #fff;
+}
+.top_header{
+    font-family: 黑体;
+    font-size: 24px;
+}
+#top_li{
+    width: 45%;
+    height: 60px;
+    float: left;
+}
+.top_word1,.top_word2{
+    width: 80%;
+    height: 60px;
+    float: left;
+    font-size: 14px;
+    text-align: left;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    color: blue;
+}
+.top_word1{
+	float: left;
+}
+.top_word2{
+	float: right;
+}
+/* #################End学院排名################# */
+
+#position,#introduce{
+	background: #595959;
+}
+#position_lt{
+	width: 10%;
+	height:60px;
+}
+#position_btn,#human_rh{
+	width: 90px;
+	height: 55px;
+	margin-top: 10px;
+}
+#position_btn{
+	margin-left: 5px;
+}
+#position_li,#human_lt{
+	margin-top: 10px;
+	width: 85%;
+	height: 90px;
+	overflow: hidden;
+}
+#position_li li,#human_lt li{
+	list-style: none;
+	height: 20px;
+}
+/* #################End赛况转播################# */
+
+#human{
+	background: #fff;
+}
+#human_rh{
+	margin-right: 5px;
+}
+#human_btn{
+	width: 90px;
+	height: 55px;
+	margin-top: 10px;
+	margin-right: 5px;
+	background: #808387;
+}
+/* #################End人物访谈################# */
+
+#footer{
+	width: 100%;
+	height: 40px;
+	float: left;
+	margin-top: 20px;
+	line-height: 40px;
+	color:#fff;
+	background: url(..//img/_bg.png)repeat;
+}
+#footer li{
+	list-style: none;
+	width: 20%;
+	height: 30px;
+	float: left;
+	line-height: 30px;
+}
+/*######################
+############		  ############
+############@首页结束@############
+############		  ############
+###########################*/
+
+/*@@@@@@@@@@@@@@@@@@
+	赛况转播开始
+@@@@@@@@@@@@@@@@@@@@@*/
+#new{
+	width: 95%;
+	height: 600px;
+	float: left;
+	margin-left: 2.5%;
+	background: #abc;
+}
+	/*######################
+############@赛况转播结束@############
+	###########################*/
+
+/*@@@@@@@@@@@@@@@@@@
+	项目介绍开始
+@@@@@@@@@@@@@@@@@@@@@*/
+#introduce_main{
+	width: 95%;
+	height: 600px;
+	float: left;
+	margin-left: 2.5%;
+	background: #abc; 
+}
+	/*######################
+############@项目介绍结束@############
+	###########################*/
