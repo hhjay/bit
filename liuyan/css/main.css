@@ -1,0 +1,62 @@
+body{width: 100%;margin: 0px;padding: 0px;}
+ul{margin: 0px;padding: 0px;}
+li{list-style: none;}
+#main{
+	width: 90%;
+	height: 900px;
+	margin: 10px auto;
+}
+#left{
+	width: 40%;
+	height: 900px;
+	float: left;
+	background: #ccc;
+}
+#message{
+	width: 80%;
+	height: 500px;
+	float: left;
+	margin-left: 5%;
+}
+#message label{
+	float: left;
+}
+
+
+#right{
+	width: 55%;
+	height: 900px;
+	float: right;	
+}
+.rCon{
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-top: 5px;
+	background: #aaa;
+}
+.rConLi{
+	text-indent: 2em;
+}
+.rCon p{
+	width: 10%;
+	float: right;
+	text-align: left;
+	margin-right: 25px;
+}
+#pageNav{
+	width: 80%;
+	height: 30px;
+	float: right;
+	margin-top: 20px;
+	line-height: 30px;
+}
+#pageNav li{
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	margin-left: 5px;
+	background: #bbb;
+	float: left;
+}
