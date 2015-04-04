@@ -1,4 +1,4 @@
-$(document).ready(function() {// get jQuery
+$(document).ready(function() {
     var len = 0,//总条数
         page = 1,//总页数
         pageSize = 6,//每页条数
