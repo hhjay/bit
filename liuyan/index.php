@@ -3,7 +3,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>留言板</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="../../../jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="js/ajax.js"></script>
 </head>
 <body>
@@ -26,24 +26,11 @@
 			</p>
 		</form>
 	</div>
-	<?php 
-		// include("conn.php");
-		// if (isset($_POST['sub'])){
-		// 	$time = time();
-		// 	$up_sql = "INSERT INTO message(author,mail,main,time) VALUES
-		// 	('$_POST[user]','$_POST[mail]','$_POST[con]','$time')";
-		// 	if(!mysql_query($up_sql,$conn)){
-  //   			echo '抱歉！添加数据失败：',mysql_error(),'<br />';
-		// 	}else {
-		// 		include("fenye.php");
-		// 	}
-		// }	
-	?>
 	<div id="right">
 		<h1>往事</h1>	
 		<div id="conMain">	
 			<?php
-				include("fenye.php");
+				include("select.php");
 			?>
 		</div>
 	</div>

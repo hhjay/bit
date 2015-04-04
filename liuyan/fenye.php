@@ -1,14 +1,11 @@
 <?php 
 	include("conn.php");
-	if (!$conn){die("连接数据库失败：" . mysql_error());}
-	mysql_select_db("$db", $conn);
-	date_default_timezone_set("Asia/ShangHai");
 	if( isset($_GET['page']) ){// 获取当前页
   		$page = intval( $_GET['page'] );
 	}else{
   		$page = 1;
 	} 
-	$pageSize = 10; // 每页条数
+	$pageSize = 6; // 每页条数
 	$sql = "SELECT count(*) AS amount FROM message";
 	$result = mysql_query($sql);
 	$row = mysql_fetch_array($result);
@@ -28,8 +25,7 @@
 	}
 	if($all){
 		$a = ($page-1)*$pageSize;
-		$b = ($page)*$pageSize;
-  		$result = mysql_query("SELECT * FROM message ORDER BY id DESC LIMIT $a,$b");
+  		$result = mysql_query("SELECT * FROM message ORDER BY id DESC LIMIT $a,$pageSize");
   		while ( $row = mysql_fetch_array($result) ){
     		echo '<div class="rCon">';
 			echo '<div class="rConLi">'.$row["id"]."&nbsp;".$row["main"].'</div>';
@@ -41,7 +37,7 @@
 	}
 	echo '<div id="pageNav"><ul>';
 	for ($i=0; $i < $curNum; $i++) {	
-		echo '<li class="' . ($i+1) . '">' . ($i+1) . '</li>';	
+		echo '<li class="' . ($i+1) . '"><a href=?page='.($i+1).'>' . ($i+1) . '</a></li>';	
 	}
 	echo '</ul></div>';// 利用get传值
 	mysql_close($conn);
