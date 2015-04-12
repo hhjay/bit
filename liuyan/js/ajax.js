@@ -5,13 +5,13 @@ $(document).ready(function() {
         show;
     show = $(".rCon");
     len = show.length;
-    $(".rCon").css("display","none");
-    for (var i = ((page-1)*pageSize); i < (page*pageSize); i++) {
-        $(".rCon")[i].style.display = "block";
-    }
     if (len==0) {
         $("#conMain").text("data is null");
     }else{
+        $(".rCon").css("display","none");
+        for (var i = ((page-1)*pageSize); i < (page*pageSize); i++) {
+            $(".rCon")[i].style.display = "block";
+        }
         showLi(len);
         $("#pageNav li").click(function() {
             page = $(this).attr("class");
